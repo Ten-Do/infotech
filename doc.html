@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+	<div class="table">
+		<div class="table_head">
+			<div class="firstName">
+				<h2>Имя</h2>
+				<div>
+					<button id="nameSortBtn">A-Z</button>
+					<button id="nameRevSortBtn">Z-A</button>
+				</div>
+			</div>
+				<div class="lastName">
+				<h2>Фамилия</h2>
+				<div>
+					<button id="lastNameSortBtn">A-Z</button>
+					<button id="lastNameRevSortBtn">Z-A</button>
+				</div>
+			</div>
+			<div class="about">
+				<h2>Описание</h2>
+				<div>
+					<button id="aboutSortBtn">A-Z</button>
+					<button id="aboutRevSortBtn">Z-A</button>
+				</div>
+			</div>
+			<div class="eyeColor">
+				<div>
+
+					<h2>Цвет глаз</h2>
+					<div>
+						<button id="eyeColorSortBtn">A-Z</button>
+						<button id="eyeColorRevSortBtn">Z-A</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="table_body">
+		</div>
+	</div>
+	<div>
+		<div class="viewForm">
+			<div>
+				<input type="checkbox" name="firstName" id="viewFirstName" checked>
+				<label for="firstName">Имя</label>
+			</div>
+			<div>
+				<input type="checkbox" name="lastName" id="viewLastName" checked>
+				<label for="lastName">Фамилия</label>
+			</div>
+			<div>
+				<input type="checkbox" name="about" id="viewAbout" checked>
+				<label for="about">Описание</label>
+			</div>
+			<div>
+				<input type="checkbox" name="eyeColor" id="viewEyeColor" checked>
+				<label for="eyeColor">Цвет глаз</label>
+			</div>
+			<div class="manageContentBtns">
+				<button id="addContent">Показать еще</button>
+				<button id="hideContent" style="display:none;">Скрыть</button>
+			</div>
+		</div>
+		<div class="editForm">
+			<div class="editFormFields">
+				<input type="text" id="firstNameField">
+				<input type="text" id="lastNameField">
+				<input type="tel" id="phoneField">
+				<textarea id="aboutField"></textarea>
+				<input type="color" id="eyeColorField">
+			</div>
+			<div class="editFormBtns">
+				<button class="cancelBtn">Отмена</button>
+				<button class="editBtn">Редактировать</button>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="./data.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+
+</html>

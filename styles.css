@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  	font-family: 'Open Sans', sans-serif;
+  	font-weight: 400;
+  	color:#b9b3c0;
+  	background-color:#1F2739;
+	display: flex;
+    padding-bottom: 10vh;
+}
+.container {
+	display: flex;
+	margin: 0 auto;
+	gap: 10px;
+}
+h2 {
+	text-shadow: 0 0 1px #0f4158;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-align: left;
+	color: #2084b3;
+	margin-bottom: 0;
+}
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+	min-width: 455px;
+	max-width: 50vw;
+	box-shadow: 0 1px 10px rgb(29, 28, 34);
+}
+.table_head {
+	display: flex;
+	z-index: 1;
+	padding: 0 10px;
+	background-color: #1F2739;
+	position: sticky;
+	top: 0;
+	padding-bottom: 20px;
+	box-shadow: 0 1px 3px rgb(29, 28, 34);
+}
+.table_head .firstName, .table_head .lastName {
+	flex: 3;
+}
+.table_head .about {
+	flex: 4;
+}
+.table_head .eyeColor {
+	display: flex;
+	justify-content: end;
+	flex: 3;
+}
+.table_row {
+	display: flex;
+	justify-content: space-between;
+	padding: 7px 0 10px 8px;
+	overflow: hidden;
+}
+.table_row * {
+	display: flex;
+	line-height: 1.6em;
+	height: 2.8em;
+}
+.table_row:nth-child(odd) {
+	background-color: #323C50;
+}
+.table_row:nth-child(odd) {
+	background-color: #2C3446;
+}
+.table_row .firstName, .table_row .lastName {
+	flex: 3;
+}
+.table_row .about {
+	flex: 6;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	margin-right: 3px;
+}
+.table_row .eyeColor {
+	flex: 2;
+	margin: 0 20px;
+	border-radius: 16px;
+}
+.editForm {
+    border-radius: 8px;
+	z-index: 1;
+	padding: 10px 20px;
+	width:min-content;
+	background-color: #1F2739;
+	position: sticky;
+	top: 110px;
+	box-shadow: 0 0 5px #0f4158;
+}
+.editFormFields *  {
+	width: 20vw;
+	display: block;
+	padding: 6px 4px 8px 10px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+#aboutField {
+	min-height: 250px;
+	min-width: 20vw;
+	max-width: 20vw;
+}
+.openRow {
+	display:block;
+	overflow: visible;
+}
+.openRow .about {
+	-webkit-line-clamp: 100;
+	height: auto !important;
+}
+.viewForm {
+    border-radius: 8px;
+	z-index: 1;
+	padding: 10px 20px;
+	width:max-content;
+	background-color: #1F2739;
+	position: sticky;
+	top: 10px;
+	box-shadow: 0 0 5px #0f4158;
+}
